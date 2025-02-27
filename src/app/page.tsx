@@ -1,15 +1,17 @@
 "use client";
-import { Box, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
+import DarkMode from "./components/DarkMode";
 
 export default function Home() {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <Box
       sx={{
         height: "100vh",
         width: "100vw",
-        bgcolor: theme.palette.background.default,
       }}
-    ></Box>
+    >
+      <DarkMode />
+    </Box>
   );
 }
