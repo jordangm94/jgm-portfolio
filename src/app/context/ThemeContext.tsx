@@ -1,7 +1,7 @@
 "use client";
 
 import { darkTheme, lightTheme } from "@/theme";
-import { createTheme, Theme, useMediaQuery } from "@mui/material";
+import { Theme, useMediaQuery } from "@mui/material";
 import { createContext, ReactNode, useEffect, useState } from "react";
 
 type ThemeContextType = {
@@ -13,7 +13,7 @@ type ThemeContextType = {
 export const ThemeContext = createContext<ThemeContextType>({
   mode: false,
   setMode: () => {},
-  theme: createTheme({ palette: { mode: "light" } }),
+  theme: lightTheme,
 });
 
 export default function ThemeContextProvider({
@@ -21,14 +21,18 @@ export default function ThemeContextProvider({
 }: {
   children: ReactNode;
 }) {
-  const prefersMode = useMediaQuery("(prefers-color-scheme: light");
-  const [mode, setMode] = useState(prefersMode);
+  const prefersMode = useMediaQuery("(prefers-color-scheme: dark");
+  const [mode, setMode] = useState<boolean>(false);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     setMode(prefersMode);
+    setHydrated(true);
   }, [prefersMode]);
 
   const theme = mode ? darkTheme : lightTheme;
+
+  if (!hydrated) return null;
 
   return (
     <ThemeContext.Provider value={{ mode, setMode, theme }}>
