@@ -1,5 +1,11 @@
 import DarkMode from "./components/DarkMode";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
-  return <DarkMode />;
+  return (
+    <>
+      <NavBar />
+      <DarkMode />
+    </>
+  );
 }

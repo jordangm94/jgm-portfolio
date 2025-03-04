@@ -9,7 +9,6 @@ export default function DarkMode() {
   const { setMode, mode } = useContext(ThemeContext);
   return (
     <Paper elevation={0} sx={{ height: "100vh", borderRadius: 0 }}>
-      Dark Mode
       <IconButton
         onClick={() => {
           if (mode) {
