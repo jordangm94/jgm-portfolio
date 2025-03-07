@@ -3,7 +3,7 @@
 import { Brightness4, Brightness7 } from "@mui/icons-material";
 import { IconButton, Paper } from "@mui/material";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export default function DarkMode() {
   const { setMode, mode } = useContext(ThemeContext);
