@@ -33,6 +33,7 @@ export default function NavBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
+        elevation={0}
         sx={{
           backgroundColor: theme.palette.background.paper,
           color: theme.palette.text.primary,
