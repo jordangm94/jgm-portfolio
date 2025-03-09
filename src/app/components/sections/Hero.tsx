@@ -2,6 +2,7 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import HeroPhoto from "../../../../public/hero_photo.jpg";
+import JGMButton from "../ui/Button";
 
 export default function Hero() {
   const theme = useTheme();
@@ -129,6 +130,9 @@ export default function Hero() {
             {"Great Food 🍔"}
           </Typography>
         </Box>
+        <a href="/test-file.pdf" download>
+          <JGMButton>Download Resume</JGMButton>
+        </a>
       </Box>
       <Box
         sx={{

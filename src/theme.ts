@@ -7,6 +7,9 @@ const themeFont = "Inter, sans-serif";
 export const lightTheme = createTheme({
   typography: {
     fontFamily: themeFont,
+    button: {
+      textTransform: "none",
+    },
   },
   palette: {
     mode: "light",
@@ -27,6 +30,9 @@ export const lightTheme = createTheme({
 export const darkTheme = createTheme({
   typography: {
     fontFamily: themeFont,
+    button: {
+      textTransform: "none",
+    },
   },
   palette: {
     mode: "dark",
