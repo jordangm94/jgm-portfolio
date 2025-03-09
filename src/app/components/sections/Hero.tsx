@@ -132,8 +132,8 @@ export default function Hero() {
       </Box>
       <Box
         sx={{
-          width: { xs: "300px", md: "650px", lg: "500px" },
-          height: { xs: "300px", md: "650px", lg: "500px" },
+          width: { xs: "350px", md: "650px", lg: "500px" },
+          height: { xs: "350px", md: "650px", lg: "500px" },
           position: "relative",
         }}
       >
