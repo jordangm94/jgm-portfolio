@@ -5,6 +5,20 @@ import HeroPhoto from "../../../../public/hero_photo.jpg";
 
 export default function Hero() {
   const theme = useTheme();
+
+  const heroTextTypographyStylesWhite = {
+    whiteSpace: "nowrap",
+    color: theme.palette.text.primary,
+    fontSize: "inherit",
+  };
+
+  const heroTextTypographyStylesOrange = {
+    flexGrow: 1,
+    whiteSpace: "nowrap",
+    color: theme.palette.primary.main,
+    fontSize: "inherit",
+  };
+
   return (
     <Box
       sx={{
@@ -21,58 +35,98 @@ export default function Hero() {
       <Box
         sx={{
           display: "flex",
-          alignItems: { xs: "center", lg: "flex-start" },
-          textAlign: { xs: "center", lg: "left" },
+          alignItems: "flex-start",
+          textAlign: "left",
           pt: { xs: 0, lg: 10 },
           flexDirection: "column",
         }}
       >
-        <Box sx={{ display: "flex", gap: 1 }}>
+        <Box sx={{ display: "flex", pb: 2, gap: 1 }}>
           <Typography
-            variant="h4"
             component="div"
             sx={{
               color: theme.palette.text.primary,
-              fontSize: { xs: "2rem", sm: "2rem" },
+              fontSize: { xs: "2rem", sm: "2.2rem" },
             }}
           >
-            {"I'm" + " "}
+            {"I'm"}
           </Typography>
           <Typography
-            variant="h4"
             component="div"
             sx={{
               flexGrow: 1,
               color: theme.palette.primary.main,
-              fontSize: { xs: "2rem", sm: "2rem" },
+              fontSize: { xs: "2rem", sm: "2.2rem" },
             }}
           >
             {"Jordan Martinez!"}
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", gap: 1 }}>
-          <Typography
-            variant="h4"
-            component="div"
-            sx={{
-              whiteSpace: "nowrap",
-              color: theme.palette.text.primary,
-              fontSize: { xs: "1.25rem", sm: "2rem" },
-            }}
-          >
-            {"Full Time"}
+        <Box
+          sx={{
+            display: "flex",
+            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
+            gap: 0.5,
+          }}
+        >
+          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+            {"Full Stack"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+            {"Developer"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+            {"|"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+            {"Former"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+            {"Physics Teacher 👨‍💻"}
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 0.5,
+            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
+          }}
+        >
+          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+            {"Turning"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+            {"Science"}
           </Typography>
           <Typography
-            variant="h4"
+            variant="h6"
             component="div"
-            sx={{
-              flexGrow: 1,
-              whiteSpace: "nowrap",
-              color: theme.palette.primary.main,
-              fontSize: { xs: "1.25rem", sm: "2rem" },
-            }}
+            sx={heroTextTypographyStylesWhite}
           >
-            {"Full Stack Developer"}
+            {"into"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+            {"Software ⚡"}
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 0.5,
+            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
+          }}
+        >
+          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+            {"Powered by"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+            {"Code"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+            {"and"}
+          </Typography>
+          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+            {"Great Food 🍔"}
           </Typography>
         </Box>
       </Box>
