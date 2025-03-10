@@ -3,6 +3,7 @@ import { Box, useTheme } from "@mui/material";
 import Hero from "./components/sections/Hero";
 import DarkMode from "./components/ui/DarkMode";
 import NavBar from "./components/ui/NavBar";
+import AboutMe from "./components/sections/AboutMe";
 
 export default function Home() {
   const theme = useTheme();
@@ -16,6 +17,7 @@ export default function Home() {
     >
       <NavBar />
       <Hero />
+      <AboutMe />
       <DarkMode />
     </Box>
   );
