@@ -130,7 +130,7 @@ export default function Hero() {
             {"Great Food 🍔"}
           </Typography>
         </Box>
-        <a href="/test-file.pdf" download>
+        <a href="/JordanMartinez-Resume.pdf" download>
           <JGMButton>Download Resume</JGMButton>
         </a>
       </Box>
