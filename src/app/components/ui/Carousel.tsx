@@ -24,19 +24,26 @@ export default function Carousel() {
   return (
     <Box
       sx={{
-        maxWidth: "500px",
-        // margin: "0 auto",
+        width: { xs: 300, md: 500 },
+        height: { xs: 400, md: 666 },
       }}
     >
       <Slider {...settings}>
         {arrayOfCarouselPhotos.map((photo, index) => {
           return (
-            <Box key={index}>
+            <Box
+              key={index}
+              sx={{
+                width: { xs: 300, md: 500 },
+                height: { xs: 400, md: 666 },
+                position: "relative",
+              }}
+            >
               <Image
                 src={photo}
                 alt={`Photo ${index}`}
-                width={500}
-                height={666}
+                layout="fill"
+                style={{ objectFit: "cover" }}
               />
             </Box>
           );
