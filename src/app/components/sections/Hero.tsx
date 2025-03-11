@@ -3,22 +3,13 @@ import { Box, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import HeroPhoto from "../../../../public/hero_photo.jpg";
 import JGMButton from "../ui/Button";
+import {
+  getSectionTypographyStylesLightDark,
+  getSectionTypographyStylesOrange,
+} from "@/app/styles/typographyStyles";
 
 export default function Hero() {
   const theme = useTheme();
-
-  const heroTextTypographyStylesWhite = {
-    whiteSpace: "nowrap",
-    color: theme.palette.text.primary,
-    fontSize: "inherit",
-  };
-
-  const heroTextTypographyStylesOrange = {
-    flexGrow: 1,
-    whiteSpace: "nowrap",
-    color: theme.palette.primary.main,
-    fontSize: "inherit",
-  };
 
   return (
     <Box
@@ -70,19 +61,34 @@ export default function Hero() {
             gap: 0.5,
           }}
         >
-          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesLightDark(theme)}
+          >
             {"Full Stack"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesOrange(theme)}
+          >
             {"Developer"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesLightDark(theme)}
+          >
             {"|"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesLightDark(theme)}
+          >
             {"Former"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesOrange(theme)}
+          >
             {"Physics Teacher 👨‍💻"}
           </Typography>
         </Box>
@@ -93,20 +99,29 @@ export default function Hero() {
             fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
           }}
         >
-          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesLightDark(theme)}
+          >
             {"Turning"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesOrange(theme)}
+          >
             {"Science"}
           </Typography>
           <Typography
             variant="h6"
             component="div"
-            sx={heroTextTypographyStylesWhite}
+            sx={getSectionTypographyStylesLightDark(theme)}
           >
             {"into"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesOrange(theme)}
+          >
             {"Software ⚡"}
           </Typography>
         </Box>
@@ -117,16 +132,28 @@ export default function Hero() {
             fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
           }}
         >
-          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesLightDark(theme)}
+          >
             {"Powered by"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesOrange(theme)}
+          >
             {"Code"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesWhite}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesLightDark(theme)}
+          >
             {"and"}
           </Typography>
-          <Typography component="div" sx={heroTextTypographyStylesOrange}>
+          <Typography
+            component="div"
+            sx={getSectionTypographyStylesOrange(theme)}
+          >
             {"Great Food 🍔"}
           </Typography>
         </Box>
