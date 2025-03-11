@@ -14,7 +14,7 @@ export default function AboutMe() {
         flexDirection: { xs: "column", lg: "row" },
         alignItems: "center",
         justifyContent: "center",
-        gap: { lg: 8 },
+        gap: { lg: 15 },
         pt: 10,
         width: "100%",
         backgroundColor: theme.palette.background.paper,
@@ -32,107 +32,103 @@ export default function AboutMe() {
         >
           About Me
         </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-            gap: 1,
-            pb: 3,
-          }}
-        >
-          <Typography
-            sx={getSectionTypographyStylesOrange(theme)}
-            component="div"
+        <Box sx={{ fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.3rem" } }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              pb: 3,
+            }}
           >
-            {"Full Stack"}
-          </Typography>
-          <Typography
-            sx={getSectionTypographyStylesLightDark(theme)}
-            component="div"
+            <Typography
+              sx={getSectionTypographyStylesOrange(theme)}
+              component="div"
+            >
+              {"Full Stack"}
+            </Typography>
+            <Typography
+              sx={getSectionTypographyStylesLightDark(theme)}
+              component="div"
+            >
+              {"Developer with a background in"}
+            </Typography>
+            <Typography
+              sx={getSectionTypographyStylesOrange(theme)}
+              component="div"
+            >
+              {"Education!"}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              pb: 3,
+            }}
           >
-            {"Developer with a background in"}
-          </Typography>
-          <Typography
-            sx={getSectionTypographyStylesOrange(theme)}
-            component="div"
+            <Typography
+              sx={getSectionTypographyStylesLightDark(theme)}
+              component="div"
+            >
+              {"Languages: English & Spanish"}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              pb: 3,
+            }}
           >
-            {"Education!"}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-            gap: 1,
-            pb: 3,
-          }}
-        >
-          <Typography
-            sx={getSectionTypographyStylesLightDark(theme)}
-            component="div"
+            <Typography
+              sx={getSectionTypographyStylesLightDark(theme)}
+              component="div"
+            >
+              {"Favourite Food: Birria Tacos 🌮"}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              pb: 3,
+            }}
           >
-            {"Languages: English & Spanish"}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-            gap: 1,
-            pb: 3,
-          }}
-        >
-          <Typography
-            sx={getSectionTypographyStylesLightDark(theme)}
-            component="div"
+            <Typography
+              sx={getSectionTypographyStylesLightDark(theme)}
+              component="div"
+            >
+              {"City: Pickering, Ontario"}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              pb: 3,
+            }}
           >
-            {"Favourite Food: Birria Tacos 🌮"}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-            gap: 1,
-            pb: 3,
-          }}
-        >
-          <Typography
-            sx={getSectionTypographyStylesLightDark(theme)}
-            component="div"
+            <Typography
+              sx={getSectionTypographyStylesLightDark(theme)}
+              component="div"
+            >
+              {"Favourite Video Game: Call of Duty 🎮"}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              pb: 3,
+            }}
           >
-            {"City: Pickering, Ontario"}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-            gap: 1,
-            pb: 3,
-          }}
-        >
-          <Typography
-            sx={getSectionTypographyStylesLightDark(theme)}
-            component="div"
-          >
-            {"Favourite Video Game: Call of Duty 🎮"}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-            gap: 1,
-            pb: 3,
-          }}
-        >
-          <Typography
-            sx={getSectionTypographyStylesLightDark(theme)}
-            component="div"
-          >
-            {"Favourite Sport: Any racquet sport 🎾"}
-          </Typography>
+            <Typography
+              sx={getSectionTypographyStylesLightDark(theme)}
+              component="div"
+            >
+              {"Favourite Sport: Any racquet sport 🎾"}
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>
