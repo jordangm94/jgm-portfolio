@@ -40,13 +40,14 @@ export default function AboutMe() {
             textAlign: { xs: "center", sm: "left" },
             fontSize: { xs: "1rem", sm: "1.2rem", md: "1.3rem" },
             gap: 2,
+            px: { xs: 2, sm: 0 },
           }}
         >
           <Typography
             sx={getSectionTypographyStylesLightDark(theme)}
             component="div"
           >
-            {"Full Stack Developer with a background in Education 🎓"}
+            {"Full Stack Developer with a background in Education!"}
           </Typography>
           <Typography
             sx={getSectionTypographyStylesLightDark(theme)}
@@ -76,7 +77,7 @@ export default function AboutMe() {
             sx={getSectionTypographyStylesLightDark(theme)}
             component="div"
           >
-            {"Favourite Sport: Any racquet sport 🎾"}
+            {"Favourite Sport: Any racket sport 🎾"}
           </Typography>
         </Box>
       </Box>

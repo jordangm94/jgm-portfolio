@@ -27,8 +27,8 @@ export default function Hero() {
       <Box
         sx={{
           display: "flex",
-          alignItems: "flex-start",
-          textAlign: "left",
+          alignItems: { xs: "center", sm: "flex-start" },
+          textAlign: { xs: "center", sm: "left" },
           pt: { xs: 0, lg: 10 },
           flexDirection: "column",
         }}
@@ -57,104 +57,59 @@ export default function Hero() {
         <Box
           sx={{
             display: "flex",
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-            gap: 0.5,
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: { xs: "center", sm: "flex-start" },
+            textAlign: { xs: "center", sm: "left" },
+            fontSize: { xs: "1rem", sm: "1.2rem", md: "1.3rem" },
+            gap: 1,
+            px: { xs: 1.5, sm: 0 },
           }}
         >
           <Typography
-            component="div"
             sx={getSectionTypographyStylesLightDark(theme)}
+            component="div"
           >
-            {"Full Stack"}
+            Full Stack{" "}
+            <Typography
+              sx={getSectionTypographyStylesOrange(theme)}
+              component="span"
+            >
+              Developer{" "}
+            </Typography>
+            | Former{" "}
+            <Typography
+              sx={getSectionTypographyStylesOrange(theme)}
+              component="span"
+            >
+              Physics Teacher 👨‍💻
+            </Typography>
           </Typography>
           <Typography
-            component="div"
-            sx={getSectionTypographyStylesOrange(theme)}
-          >
-            {"Developer"}
-          </Typography>
-          <Typography
-            component="div"
             sx={getSectionTypographyStylesLightDark(theme)}
+            component="div"
           >
-            {"|"}
+            Turning{" "}
+            <Typography sx={getSectionTypographyStylesOrange} component="span">
+              Science{" "}
+            </Typography>
+            into{" "}
+            <Typography sx={getSectionTypographyStylesOrange} component="span">
+              Software ⚡
+            </Typography>
           </Typography>
           <Typography
-            component="div"
             sx={getSectionTypographyStylesLightDark(theme)}
-          >
-            {"Former"}
-          </Typography>
-          <Typography
             component="div"
-            sx={getSectionTypographyStylesOrange(theme)}
           >
-            {"Physics Teacher 👨‍💻"}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            gap: 0.5,
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-          }}
-        >
-          <Typography
-            component="div"
-            sx={getSectionTypographyStylesLightDark(theme)}
-          >
-            {"Turning"}
-          </Typography>
-          <Typography
-            component="div"
-            sx={getSectionTypographyStylesOrange(theme)}
-          >
-            {"Science"}
-          </Typography>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={getSectionTypographyStylesLightDark(theme)}
-          >
-            {"into"}
-          </Typography>
-          <Typography
-            component="div"
-            sx={getSectionTypographyStylesOrange(theme)}
-          >
-            {"Software ⚡"}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            gap: 0.5,
-            fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.5rem" },
-          }}
-        >
-          <Typography
-            component="div"
-            sx={getSectionTypographyStylesLightDark(theme)}
-          >
-            {"Powered by"}
-          </Typography>
-          <Typography
-            component="div"
-            sx={getSectionTypographyStylesOrange(theme)}
-          >
-            {"Code"}
-          </Typography>
-          <Typography
-            component="div"
-            sx={getSectionTypographyStylesLightDark(theme)}
-          >
-            {"and"}
-          </Typography>
-          <Typography
-            component="div"
-            sx={getSectionTypographyStylesOrange(theme)}
-          >
-            {"Great Food 🍔"}
+            Powered by{" "}
+            <Typography sx={getSectionTypographyStylesOrange} component="span">
+              Code{" "}
+            </Typography>
+            and{" "}
+            <Typography sx={getSectionTypographyStylesOrange} component="span">
+              Great Food 🍔
+            </Typography>
           </Typography>
         </Box>
         <a href="/JordanMartinez-Resume.pdf" download>
