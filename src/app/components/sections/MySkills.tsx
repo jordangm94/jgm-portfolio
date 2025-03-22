@@ -2,15 +2,23 @@ import { Box, Typography, useTheme } from "@mui/material";
 
 export default function MySkills() {
   const theme = useTheme();
+
   return (
     <Box>
       <Box
+        id="Icon-Container"
         sx={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
+          maxWidth: { xs: "300px", sm: "500px", md: "700px", lg: "1200px" },
+          mx: "auto",
           gap: 4,
           pt: 5,
+          fontSize: { xs: "1rem", sm: "1.2rem", md: "1.3rem" },
+          "& i": {
+            fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
+          },
         }}
       >
         <Box
@@ -19,11 +27,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-typescript-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>TypeScript</Typography>
+          <i className="devicon-typescript-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>TypeScript</Typography>
         </Box>
         <Box
           sx={{
@@ -31,11 +36,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-javascript-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>JavaScript</Typography>
+          <i className="devicon-javascript-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>JavaScript</Typography>
         </Box>
         <Box
           sx={{
@@ -43,11 +45,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-react-original colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>React</Typography>
+          <i className="devicon-react-original colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>React</Typography>
         </Box>
         <Box
           sx={{
@@ -55,8 +54,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i className="devicon-nextjs-line" style={{ fontSize: "6rem" }}></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Next.js</Typography>
+          <i className="devicon-nextjs-line"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Next.js</Typography>
         </Box>
         <Box
           sx={{
@@ -64,11 +63,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-materialui-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Material UI</Typography>
+          <i className="devicon-materialui-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Material UI</Typography>
         </Box>
         <Box
           sx={{
@@ -76,11 +72,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-tailwindcss-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Tailwind CSS</Typography>
+          <i className="devicon-tailwindcss-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Tailwind CSS</Typography>
         </Box>
         <Box
           sx={{
@@ -88,11 +81,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-html5-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>HTML5</Typography>
+          <i className="devicon-html5-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>HTML5</Typography>
         </Box>
         <Box
           sx={{
@@ -100,11 +90,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-css3-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>CSS3</Typography>
+          <i className="devicon-css3-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>CSS3</Typography>
         </Box>
         <Box
           sx={{
@@ -112,34 +99,9 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-storybook-plain"
-            style={{ fontSize: "6rem" }}
-          ></i>
+          <i className="devicon-storybook-plain"></i>
 
-          <Typography sx={{ fontSize: "1.3rem" }}>Storybook</Typography>
-        </Box>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: 4,
-          pt: 5,
-        }}
-      >
-        <Box
-          sx={{
-            textAlign: "center",
-            color: theme.palette.text.primary,
-          }}
-        >
-          <i
-            className="devicon-python-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Python</Typography>
+          <Typography sx={{ fontSize: "inherit" }}>Storybook</Typography>
         </Box>
         <Box
           sx={{
@@ -147,11 +109,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-flask-original colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Flask</Typography>
+          <i className="devicon-python-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Python</Typography>
         </Box>
         <Box
           sx={{
@@ -159,11 +118,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-express-original colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Express.js</Typography>
+          <i className="devicon-flask-original colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Flask</Typography>
         </Box>
         <Box
           sx={{
@@ -171,11 +127,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-nestjs-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>NestJS</Typography>
+          <i className="devicon-express-original colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Express.js</Typography>
         </Box>
         <Box
           sx={{
@@ -183,11 +136,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-graphql-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>GraphQL</Typography>
+          <i className="devicon-nestjs-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>NestJS</Typography>
         </Box>
         <Box
           sx={{
@@ -195,11 +145,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-postgresql-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>PostgreSQL</Typography>
+          <i className="devicon-graphql-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>GraphQL</Typography>
         </Box>
         <Box
           sx={{
@@ -207,11 +154,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-firebase-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Firebase</Typography>
+          <i className="devicon-postgresql-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>PostgreSQL</Typography>
         </Box>
         <Box
           sx={{
@@ -219,11 +163,8 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-git-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Git</Typography>
+          <i className="devicon-firebase-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Firebase</Typography>
         </Box>
         <Box
           sx={{
@@ -231,11 +172,17 @@ export default function MySkills() {
             color: theme.palette.text.primary,
           }}
         >
-          <i
-            className="devicon-jira-plain colored"
-            style={{ fontSize: "6rem" }}
-          ></i>
-          <Typography sx={{ fontSize: "1.3rem" }}>Jira</Typography>
+          <i className="devicon-git-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Git</Typography>
+        </Box>
+        <Box
+          sx={{
+            textAlign: "center",
+            color: theme.palette.text.primary,
+          }}
+        >
+          <i className="devicon-jira-plain colored"></i>
+          <Typography sx={{ fontSize: "inherit" }}>Jira</Typography>
         </Box>
       </Box>
     </Box>
