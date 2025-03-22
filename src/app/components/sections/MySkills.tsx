@@ -4,7 +4,27 @@ export default function MySkills() {
   const theme = useTheme();
 
   return (
-    <Box>
+    <Box sx={{ pt: 8 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: { xs: "center", lg: "flex-start" },
+          maxWidth: { xs: "300px", sm: "500px", md: "700px", lg: "1150px" },
+          mx: "auto",
+          pb: 4,
+        }}
+      >
+        <Typography
+          sx={{
+            display: "flex",
+            color: theme.palette.primary.main,
+            fontSize: { xs: "2rem", sm: "2.2rem" },
+            fontWeight: 800,
+          }}
+        >
+          My Skills
+        </Typography>
+      </Box>
       <Box
         id="Icon-Container"
         sx={{
@@ -14,7 +34,6 @@ export default function MySkills() {
           maxWidth: { xs: "300px", sm: "500px", md: "700px", lg: "1200px" },
           mx: "auto",
           gap: 4,
-          pt: 5,
           fontSize: { xs: "1rem", sm: "1.2rem", md: "1.3rem" },
           "& i": {
             fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
