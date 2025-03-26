@@ -22,7 +22,7 @@ export default function AboutMe() {
         <Typography
           sx={{
             display: "flex",
-            justifyContent: { xs: "center", sm: "flex-start" },
+            justifyContent: { xs: "center", md: "flex-start" },
             color: theme.palette.primary.main,
             fontSize: { xs: "2rem", sm: "2.2rem" },
             fontWeight: 800,
@@ -36,7 +36,7 @@ export default function AboutMe() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            alignItems: { xs: "center", sm: "flex-start" },
+            alignItems: { xs: "center", md: "flex-start" },
             textAlign: { xs: "center", sm: "left" },
             fontSize: { xs: "1rem", sm: "1.2rem", md: "1.3rem" },
             gap: 2,
